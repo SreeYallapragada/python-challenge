@@ -19,7 +19,6 @@ import csv
 with open('PyBank_budget_data.csv') as csvfile:
     csvreader = csv.reader(csvfile, delimiter = ',')
     csvheader = next(csvreader)
-    #print(csvreader)
 
     #Declare/initialize variables
     totalFinances = 0
@@ -34,7 +33,6 @@ with open('PyBank_budget_data.csv') as csvfile:
 
     #Loop through csv
     for row in csvreader:
-        #print(row)
         rowCounter = rowCounter + 1
         totalFinances += float(row[1])
         profitLossDiff = float(row[1]) - lastProfitLossDiff
