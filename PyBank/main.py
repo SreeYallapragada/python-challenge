@@ -36,7 +36,6 @@ with open('PyBank_budget_data.csv') as csvfile:
     for row in csvreader:
         #print(row)
         rowCounter = rowCounter + 1
-        #rowCounter = sum(1 for row in csvreader( open ('PyBank_budget_data.csv')))
         totalFinances += float(row[1])
         profitLossDiff = float(row[1]) - lastProfitLossDiff
         lastProfitLossDiff = float(row[1])
